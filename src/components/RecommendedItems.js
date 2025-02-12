@@ -16,7 +16,7 @@ class RecommendedItems extends Component {
             <li key={item.id}>
               {item.name}{' '}
               <button onClick={() => this.props.handleAddToCart(item)}>
-                Add to Cart
+                Add to Cart {item.name}
               </button>
             </li>
           ))}
